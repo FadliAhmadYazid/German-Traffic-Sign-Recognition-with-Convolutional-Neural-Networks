@@ -22,25 +22,23 @@ Each image in the dataset includes metadata such as:
 ## Project Structure
 ```
 project_root/
-├── submission/              # Main submission directory
-│   ├── tfjs_model/          # TensorFlow.js model files
-│   │   ├── group1-shard1of1.bin
-│   │   ├── group1-shard2of2.bin
-│   │   └── model.json
-│   ├── tflite/              # TensorFlow Lite model files
-│   │   ├── model.tflite
-│   │   └── label.txt
-│   ├── saved_model/         # SavedModel format
-│   │   ├── saved_model.pb
-│   │   └── variables/
-│   ├── model.keras          # Keras model file
-│   ├── notebook.ipynb       # Implementation notebook
-│   ├── README.md            # Project documentation
-│   └── requirements.txt     # Dependencies
-├── GTSRB/                   # Original dataset
+├── tfjs_model/              # TensorFlow.js model files
+│   ├── group1-shard1of1.bin
+│   ├── group1-shard2of2.bin
+│   └── model.json
+├── tflite/                  # TensorFlow Lite model files
+│   ├── model.tflite
+│   └── label.txt
+├── saved_model/             # SavedModel format
+│   ├── saved_model.pb
+│   └── variables/
+├── model.keras              # Keras model file
+├── notebook.ipynb           # Implementation notebook
+├── README.md                # Project documentation
+├── requirements.txt         # Dependencies
 ├── logs/                    # TensorBoard logs
-├── best_model.h5            # Best model saved during training
-├── inference_proof.png      # Inference results visualization
+├── best_model.h5            # Best model saved during 
+├── inference_proof.png      # Inference results 
 ├── model.keras              # Saved Keras model
 └── model_for_tfjs.h5        # Model in H5 format for TFJS conversion
 ```
@@ -78,9 +76,9 @@ The implemented CNN uses a Sequential architecture with:
 ## Results
 
 ### Model Performance
-- Training accuracy: >95%
-- Validation accuracy: >95%
-- Test accuracy: >95%
+- Training accuracy: >100%
+- Validation accuracy: >99,92%
+- Test accuracy: >98,50%
 
 ### Inference Results
 ![Inference Results](inference_proof.png)
